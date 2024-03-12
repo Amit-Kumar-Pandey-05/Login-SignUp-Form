@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Signup</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,31 +15,32 @@
 
         <!-- sign up code starts  -->
         <div class="form-container sign-up">
-            <form action="">
+            <form method="post" action="signUp_form.php">
                 <h1>Create Account</h1>
                 <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://portfolio-2k24-gamma.vercel.app/" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.facebook.com/chhote_pandit" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/Amit-Kumar-Pandey-05/" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mr0507" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                <input type="text" name="Name" id="Name" placeholder="Name" required>
+                <input type="text" name="Name" id="Name" placeholder="Name" autofocus="" autocapitalize="none" autocomplete="username" required="" id="id_username">
+
                 <input type="email" name="email" id="SignUpEmail" placeholder="Email" required>
+       
+        
+ 
+ 
+ <div class="password-box"> 
+    <input type="password" name="password" autocomplete="current-password" placeholder="Password" required="" id="id_password_1">
+    <i class="fa-solid fa-eye-slash" id="togglePassword_1"></i>
+</div>
 
-                <div class="password-box">
-                    <input type="password" name="password" id="signUpPassword" placeholder="Password" required> <input
-                        type="checkbox" name="checkBox" id="showSignUpPassword">
-                    <label for="showSignUpPassword"><i class="fa-fas fa-eye"></i></label>
-                </div>
-                <div class="password-box">
-                    <input type="password" name="re-Enter-Password" id="Re-Enter-Password"
-                        placeholder="Re-enter Password" required> <input type="checkbox" name="ReEnter-checkBox"
-                        id="showReEnteredPassword">
-                    <label for="showReEnteredPassword"><i class="fa-fas fa-eye"></i></label>
-                </div>
-
-                <button type="button">Sign Up</button>
+<div class="password-box"> 
+    <input type="password" name="reentered_password" autocomplete="current-password" placeholder="Re-enter Password" required="" id="id_password_1a">
+    <i class="fa-solid fa-eye-slash" id="togglePassword_1a"></i>
+</div>
+                <button type="submit">Sign Up</button>
             </form>
         </div>
         <!-- sign up code ends -->
@@ -48,24 +49,24 @@
 
         <!-- sign in code starts -->
         <div class="form-container sign-in">
-            <form action="">
+            <form method="post" action="signIn_form.php">
                 <h1>Sign In</h1>
                 <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://portfolio-2k24-gamma.vercel.app/" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.facebook.com/chhote_pandit" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/Amit-Kumar-Pandey-05/" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mr0507" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email password</span>
                 <input type="email" name="Email" id="LoginEmail" placeholder="Email" required>
-                <div class="password-box">
-                    <input type="password" name="Password" id="loginPassword" placeholder="Password" required>
-                    <input type="checkbox" name="Login-checkBox" id="showLoginPassword">
-                    <label for="showLoginPassword"><i class="fa-fas fa-eye"></i></label>
+                
+                <div class="password-box">                                                    
+                    <input type="password" name="password" autocomplete="current-password" required="" id="id_password" placeholder="Password">
+  <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
                 </div>
 
                 <a href="#">Forget Your Password?</a>
-                <button type="button">Sign In</button>
+                <button type="submit">Sign In</button>
             </form>
         </div>
         <!-- sign in code ends -->

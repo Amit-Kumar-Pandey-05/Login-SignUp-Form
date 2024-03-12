@@ -9,45 +9,50 @@ loginBtn.addEventListener('click', () => {
     container.classList.remove('active')
 });
 
-const passwordInputLogin = document.getElementById('loginPassword');
-const showPasswordCheckBox = document.getElementById('showLoginPassword');
-showPasswordCheckBox.addEventListener('change', function () {
-    if (this.checked) {
-        passwordInputLogin.type = "text";
-    }
-    else {
-        passwordInputLogin.type = "password";
-    }
-});
 
 
-const passwordInput = document.getElementById('signUpPassword');
-const showSignUpPasswordCheckBox = document.getElementById('showSignUpPassword');
-showSignUpPasswordCheckBox.addEventListener('change', function () {
-    if (this.checked) {
-        passwordInput.type = "text";
-    }
-    else {
-        passwordInput.type = "password";
-    }
+const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+   this.classList.toggle('fa-eye');
 });
 
 
 
-const reEnteredPassword = document.getElementById('Re-Enter-Password');
-const showReEnteredPasswordCheckBox = document.getElementById('showReEnteredPassword');
-showReEnteredPasswordCheckBox.addEventListener('change', function () {
-    if (this.checked) {
-        reEnteredPassword.type = "text";
-    }
-    else {
-        reEnteredPassword.type = "password";
-    }
+const togglePassword_1 = document.querySelector('#togglePassword_1');
+  const password_1 = document.querySelector('#id_password_1');
+
+  togglePassword_1.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password_1.getAttribute('type') === 'password' ? 'text' : 'password';
+    password_1.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye');   
 });
 
-const Password1 = document.getElementById('signUpPassword');
-// console.log(Password1);
-const Password2 = document.getElementById('Re-Enter-Password');
-// console.log(Password2);
 
 
+
+
+const togglePassword_1a = document.querySelector('#togglePassword_1a');
+  const password_1a = document.querySelector('#id_password_1a');
+
+  togglePassword_1a.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password_1a.getAttribute('type') === 'password' ? 'text' : 'password';
+    password_1a.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye');
+});
+
+
+
+
+
+// prevent form submit 
+const form = document.querySelector("form"); form.addEventListener('submit', function (e) { e.preventDefault(); });
