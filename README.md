@@ -19,3 +19,15 @@ The login form allows registered users to authenticate themselves by entering th
 - Potential for further extension with features such as password reset, email verification, and user profile management.
 
 This project serves as a foundation for implementing user authentication and access control in web applications. It can be further extended and customized to enhance the user experience and security of the application.
+
+
+
+### Social Media and Portfolio Links
+
+- [Login-SignUp Form](https://amit-kumar-pandey-05.github.io/Login-SignUp-Form/) 
+- [![Facebook](https://img.shields.io/badge/Facebook-chhote_pandit-blue)](https://www.facebook.com/chhote_pandit)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-mr0507-blue)](https://www.linkedin.com/in/mr0507)
+- [![GitHub](https://img.shields.io/badge/GitHub-Amit--Kumar--Pandey--05-green)](https://github.com/Amit-Kumar-Pandey-05/)
+- [Portfolio 2024](https://portfolio-2k24-gamma.vercel.app/)
+- [Portfolio 2023](https://portfolio-2k23-phi.vercel.app/)
+
